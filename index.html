@@ -12,6 +12,10 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome cdn link -->
+    <script src="https://kit.fontawesome.com/3d06c4afd7.js" crossorigin="anonymous"></script>
+
     <!-- font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +38,7 @@
           >
             <div class="navbar-start">
               <div class="navbar-center hidden lg:flex flex-1 justify-between">
-                <ul class="menu menu-horizontal px-1 gap-5">
+                <ul class="menu menu-horizontal px-1 text-sm font-semibold gap-5">
                   <a href="">Home</a>
                   <a href="">About us</a>
                   <a href="">Shop</a>
@@ -43,10 +47,10 @@
               </div>
 
               <div
-                class="flex-1 flex justify-start md:justify-start lg:justify-end"
+                class="flex-1 flex justify-start items-center text-black gap-3 md:justify-start lg:justify-end md:text-white lg:text-white"
               >
                 <img src="./images/logo.png" alt="" />
-                <a class="btn btn-ghost normal-case text-xl flex justify-start"
+                <a class="normal-case text-2xl font-bold flex justify-start items-center md:text-4xl"
                   >Fruit Burst</a
                 >
               </div>
@@ -54,12 +58,13 @@
 
             <div class="flex-1 flex justify-end">
               <div class="navbar-end hidden md:block">
-                <!-- <a class="btn">search</a> -->
                 <input
                   type="text"
-                  placeholder="Type here"
-                  class="input input-bordered input-primary w-full max-w-xs rounded-full"
+                  placeholder="search here "
+                  class="input  w-full max-w-xs rounded-full relative"
+                   
                 />
+                <i class="fa-solid fa-magnifying-glass absolute lg:right-72 top-8 text-black md:right-20 "></i>
               </div>
             </div>
 
@@ -82,12 +87,12 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-auto gap-4"
               >
-                <a class="normal-case bg-[#F85559] text-xl">Home</a>
-                <a class="normal-case bg-[#F85559] text-xl">About Us</a>
-                <a class="normal-case bg-[#F85559] text-xl">Shop</a>
-                <a class="normal-case bg-[#F85559] text-xl">All Fruits</a>
+                <a class="normal-case bg-red-200 text-sm">Home</a>
+                <a class="normal-case bg-red-200 text-sm">About Us</a>
+                <a class="normal-case bg-red-200 text-sm">Shop</a>
+                <a class="normal-case bg-red-200 text-sm">All Fruits</a>
               </ul>
             </div>
           </div>
