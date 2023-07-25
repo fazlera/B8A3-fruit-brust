@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBA3-fruit-burst</title>
+
+    <!-- Tailwind & daisyUI cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container mx-auto">
+          <div
+            class="navbar text-slate-950 rounded-full flex items-center justify-between  md:bg-[#F85559] md:text-white lg:bg-[#F85559] "
+          >
+            <div class="navbar-start">
+              <div class="navbar-center hidden lg:flex flex-1 justify-between">
+                <ul class="menu menu-horizontal px-1 gap-5">
+                  <a href="">Home</a>
+                  <a href="">About us</a>
+                  <a href="">Shop</a>
+                  <a href="">All Fruits</a>
+                </ul>
+              </div>
+
+              <div
+                class="flex-1 flex justify-start md:justify-start lg:justify-end"
+              >
+                <img src="./images/logo.png" alt="" />
+                <a class="btn btn-ghost normal-case text-xl flex justify-start"
+                  >Fruit Burst</a
+                >
+              </div>
+            </div>
+
+            <div class="flex-1 flex justify-end">
+              <div class="navbar-end hidden md:block">
+                <!-- <a class="btn">search</a> -->
+                <input
+                  type="text"
+                  placeholder="Type here"
+                  class="input input-bordered input-primary w-full max-w-xs rounded-full"
+                />
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <a class="normal-case bg-[#F85559] text-xl">Home</a>
+                <a class="normal-case bg-[#F85559] text-xl">About Us</a>
+                <a class="normal-case bg-[#F85559] text-xl">Shop</a>
+                <a class="normal-case bg-[#F85559] text-xl">All Fruits</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto">
+      
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>
