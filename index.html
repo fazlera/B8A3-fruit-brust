@@ -65,15 +65,21 @@
             </div>
 
             <div class="flex-1 flex justify-end">
-              <div class="navbar-end hidden md:block">
-                <input
-                  type="text"
-                  placeholder="search here "
-                  class="input w-full max-w-xs rounded-full relative"
-                />
+              <div class="navbar-end hidden outline-none md:flex justify-between ">
+
+                
+               <div class="relative flex items-center text-black">
                 <i
-                  class="fa-solid fa-magnifying-glass absolute lg:right-72 top-16 text-black md:right-20"
-                ></i>
+                class="fa-solid fa-magnifying-glass  absolute w-5 h-5 ml-56 md:ml-48"
+              ></i>
+              <div class="px-20 py-5 md:px-10 rounded-full">
+                <input
+                type="text"
+                placeholder="search here "
+                class="rounded-full"
+              />
+              </div>
+               </div>
               </div>
             </div>
 
@@ -234,10 +240,10 @@
         <!-- Random fruit container start -->
         <section>
           <div
-            class="absolute bottom-14 left-60 hidden md:hidden md:top-3/4 md:left-60 lg:block"
+            class=" hidden  md:absolute top-96 left-40 lg:visible"
           >
             <div
-              class="mx-auto h-56 bg-white rounded-lg shadow-lg flex justify-around items-center space-x-40 px-10"
+              class="mx-auto max-w-6xl h-56 bg-white rounded-lg shadow-lg flex justify-around items-center space-x-20 px-10 border-4 border-red-950 "
             >
               <div class="text-center">
                 <img src="./images/fruit1.png" alt="" />
@@ -487,11 +493,11 @@
                   <!-- Open the modal using ID.showModal() method -->
                   <button
                     class="text-xs text-orange-500"
-                    onclick="my_modal_1.showModal()"
+                    onclick="my_modal_6.showModal()"
                   >
                     Details
                   </button>
-                  <dialog id="my_modal_1" class="modal">
+                  <dialog id="my_modal_6" class="modal">
                     <form method="dialog" class="modal-box flex justify-center">
                       <div class="card w-96">
                         <figure class="px-10 pt-10">
@@ -599,11 +605,11 @@
                   <!-- Open the modal using ID.showModal() method -->
                   <button
                     class="text-xs text-orange-500"
-                    onclick="my_modal_1.showModal()"
+                    onclick="my_modal_7.showModal()"
                   >
                     Details
                   </button>
-                  <dialog id="my_modal_1" class="modal">
+                  <dialog id="my_modal_7" class="modal">
                     <form method="dialog" class="modal-box flex justify-center">
                       <div class="card w-96">
                         <figure class="px-10 pt-10">
@@ -715,11 +721,11 @@
                   <!-- Open the modal using ID.showModal() method -->
                   <button
                     class="text-xs text-orange-500"
-                    onclick="my_modal_1.showModal()"
+                    onclick="my_modal_8.showModal()"
                   >
                     Details
                   </button>
-                  <dialog id="my_modal_1" class="modal">
+                  <dialog id="my_modal_8" class="modal">
                     <form method="dialog" class="modal-box flex justify-center">
                       <div class="card w-96">
                         <figure class="px-10 pt-10">
@@ -819,30 +825,35 @@
             <div class="hero-content text-center text-neutral-content">
               <!-- member card  -->
               <div
-                class="grid grid-cols-1 absolute top-80 lg:grid-cols-4 lg:top-72 lg:px-0 gap-20 md:grid-cols-4 md:top-52 px-10"
+                class="grid grid-cols-1 absolute top-80 lg:grid-cols-4 lg:top-72 lg:px-0 gap-10 md:grid-cols-4 md:top-44 px-10"
               >
                 <!-- member one -->
                 <div
-                  class="text-white flex justify-center items-center flex-col md:w-1/2"
+                  class="text-white flex justify-center items-center text-center"
                 >
-                  <img src="./images/member1.png" class="w-32" alt="" />
-                  <h1 class="text-sm lg:text-4xl font-bold">Awlad Hossain</h1>
-                  <p class="text-sm md:text-xs lg:text-2xl">Fruits Expert</p>
-
-                  <div class="space-x-2 flex">
-                    <i class="fa-brands text-[#F85559] fa-facebook"></i>
-                    <i class="fa-brands text-[#F85559] fa-twitter"></i>
-                    <i class="fa-brands text-[#F85559] fa-linkedin"></i>
+                  <div class="text-center flex justify-center items-center flex-col">
+                    <img src="./images/member1.png" class="" alt="" />
+                    <h1 class="text-sm lg:text-2xl font-bold">Awlad Hossain</h1>
+                    <p class="text-sm md:text-xs lg:text-2xl">Fruits Expert</p>
+  
+                    <span>
+                      <i class="fa-brands text-[#F85559] fa-facebook"></i>
+                      <i class="fa-brands text-[#F85559] fa-twitter"></i>
+                      <i class="fa-brands text-[#F85559] fa-linkedin"></i>
+                    </span>
                   </div>
 
-                  <div></div>
                 </div>
                 <!-- member two -->
                 <div
                   class="text-white flex justify-center items-center flex-col"
                 >
-                  <img src="./images/member2.png" class="w-32" alt="" />
-                  <h1 class="text-sm lg:text-4xl font-bold">Safia Chowdhury</h1>
+                  
+
+                  <div class="flex flex-col justify-center items-center text-center">
+
+                    <img src="./images/member2.png" class="" alt="" />
+                  <h1 class="text-sm lg:text-2xl font-bold">Safia Chowdhury</h1>
                   <p class="text-sm md:text-xs lg:text-2xl">Fruits Expert</p>
 
                   <div class="space-x-2 flex">
@@ -850,15 +861,17 @@
                     <i class="fa-brands text-[#F85559] fa-twitter"></i>
                     <i class="fa-brands text-[#F85559] fa-linkedin"></i>
                   </div>
-
-                  <div></div>
+                  </div>
                 </div>
                 <!-- member three -->
                 <div
-                  class="text-white flex justify-center items-center flex-col md:w-1/2"
+                  class="text-white flex justify-center items-center flex-col md:"
                 >
-                  <img src="./images/member3.png" class="w-32" alt="" />
-                  <h1 class="text-sm lg:text-4xl font-bold">Rokib Hossain</h1>
+                  
+
+                  <div class="flex flex-col justify-center items-center text-center">
+                    <img src="./images/member3.png" class="" alt="" />
+                  <h1 class="text-sm lg:text-2xl font-bold">Rokib Hossain</h1>
                   <p class="text-sm md:text-xs">Fruits Expert</p>
 
                   <div class="space-x-2 flex">
@@ -866,25 +879,25 @@
                     <i class="fa-brands text-[#F85559] fa-twitter"></i>
                     <i class="fa-brands text-[#F85559] fa-linkedin"></i>
                   </div>
-
-                  <div></div>
+                  </div>
                 </div>
                 <!-- member four -->
                 <div
-                  class="text-white flex justify-center items-center flex-col md:w-1/2"
-                >
-                  <img src="./images/member4.png" class="w-32" alt="" />
-                  <h1 class="text-sm lg:text-4xl font-bold">Chaity</h1>
-                  <p class="text-sm md:text-xs">Fruits Expert</p>
-
-                  <div class="space-x-2 flex">
-                    <i class="fa-brands text-[#F85559] fa-facebook"></i>
-                    <i class="fa-brands text-[#F85559] fa-twitter"></i>
-                    <i class="fa-brands text-[#F85559] fa-linkedin"></i>
+                  class="text-white flex justify-center items-center flex-col md:"
+                >                 
+                  <div class="flex flex-col justify-center items-center text-center">
+                    <img src="./images/member4.png" class="" alt="" />
+                    <h1 class="text-sm lg:text-2xl font-bold">Chaity</h1>
+                    <p class="text-sm md:text-xs">Fruits Expert</p>
+  
+                    <div class="space-x-2 flex">
+                      <i class="fa-brands text-[#F85559] fa-facebook"></i>
+                      <i class="fa-brands text-[#F85559] fa-twitter"></i>
+                      <i class="fa-brands text-[#F85559] fa-linkedin"></i>
+                    </div>
                   </div>
-
-                  <div></div>
                 </div>
+
               </div>
             </div>
           </div>
